@@ -4,7 +4,9 @@
 
 ## 查看
 
-线上预览地址将在发布完成后更新到这里。
+[打开在线预览](https://her-in-motion-nov10.wangqianruniubi.chatgpt.site)
+
+预览站点和 GitHub 仓库均设为私有；预览使用创建者的 ChatGPT 账号访问，仓库使用 wqrnb 的 GitHub 账号访问。
 
 ## 页面体验
 
