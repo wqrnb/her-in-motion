@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="她。每一面，都动人。走进她的个人影像，收藏镜头里的自然瞬间。">
+  <title>她 · 每一面，都动人。</title>
+  <link rel="icon" type="image/svg+xml" href="assets/monogram.svg">
+  <link rel="preload" href="assets/hero.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="global-header" id="top">
+    <nav class="global-nav" aria-label="主导航">
+      <a class="wordmark" href="#top" aria-label="Her 首页">Her<span>.</span></a>
+      <div class="global-links"><a href="#impressions">初见</a><a href="#motion">动态</a><a href="#portraits">每一面</a><a href="#moments">瞬间</a></div>
+      <button class="film-link" data-film>观看影片 <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4Z"/></svg></button>
+    </nav>
+  </header>
+  <div class="local-header">
+    <nav class="local-nav" aria-label="页面导航"><a class="local-name" href="#top">她。</a><div><a class="overview" href="#impressions">概览</a><a href="#moments">影像集</a><button class="pill small" data-film>播放短片</button></div></nav>
+    <div class="page-progress" aria-hidden="true"></div>
+  </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-sticky">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-type" aria-hidden="true">Her.</div>
+        <div class="hero-image"><img src="assets/hero.webp" alt="她的暗色光影人像，长发与透明框眼镜，在柔光下望向镜头" fetchpriority="high" width="1536" height="1024"></div>
+        <div class="hero-heading"><p>她。</p><h1 id="hero-title">每一面，都动人。</h1></div>
+        <div class="hero-bottom"><span>这一刻，主角是她。</span><button data-film class="watch">观看她的影片 <span class="play-circle"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 7 5-7 5Z"/></svg></span></button></div>
+        <a class="scroll-cue" href="#impressions" aria-label="向下探索"><span>向下，认识她</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="impressions" aria-labelledby="intro-title">
+      <p class="section-kicker">初见，就很难忘。</p>
+      <h2 id="intro-title" class="intro-text"><span>不必刻意。</span><span>她的日常，</span><span>就很有看头。</span></h2>
+      <p class="intro-caption">一副眼镜，一头长发。<br>还有镜头前，藏不住的小表情。</p>
+    </section>
+
+    <section class="highlights" aria-labelledby="highlights-title">
+      <div class="section-head section-wrap"><h2 id="highlights-title">先看，心动瞬间。</h2><button class="text-link" data-film>观看影片 <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4Z"/></svg></button></div>
+      <div class="highlight-track" aria-label="人物亮点画廊" tabindex="0">
+        <article class="highlight-card warm"><img src="assets/moment-playful.jpg" alt="她戴着眼镜，露出惊喜的小表情" loading="lazy" width="720" height="1280"><div class="card-shade"></div><div class="card-copy"><p>表情，不止一面。</p><h3>有一点俏皮。<br>刚刚好。</h3></div><button class="round expand" data-gallery="0" aria-label="放大查看俏皮瞬间"><span>+</span></button></article>
+        <article class="highlight-card"><img src="assets/moment-candid.jpg" alt="她与镜头对视，手里拿着零食" loading="lazy" width="720" height="1280"><div class="card-shade"></div><div class="card-copy"><p>日常，自有光。</p><h3>随手一帧。<br>就很动人。</h3></div><button class="round expand" data-gallery="1" aria-label="放大查看自然瞬间"><span>+</span></button></article>
+        <article class="highlight-card"><img src="assets/moment-soft.jpg" alt="她坐在镜头前的自然人像" loading="lazy" width="720" height="1280"><div class="card-shade"></div><div class="card-copy"><p>靠近一点。</p><h3>让目光，<br>多停留一会。</h3></div><button class="round expand" data-gallery="2" aria-label="放大查看温柔瞬间"><span>+</span></button></article>
+      </div>
+      <div class="gallery-controls section-wrap"><div class="gallery-dots" aria-label="选择亮点"><button class="selected" aria-label="查看第一张" aria-current="true" data-slide="0"></button><button aria-label="查看第二张" data-slide="1"></button><button aria-label="查看第三张" data-slide="2"></button></div><div class="arrows"><button class="round" data-direction="-1" aria-label="上一张亮点"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><button class="round" data-direction="1" aria-label="下一张亮点"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div></div>
+    </section>
+
+    <section class="cinema" id="motion" aria-labelledby="cinema-title">
+      <div class="cinema-sticky">
+        <div class="cinema-frame"><video class="scroll-video" muted playsinline preload="metadata" poster="assets/moment-playful.jpg" aria-label="她的生活短片，画面随滚动推进"><source src="assets/scroll.mp4" type="video/mp4"></video><div class="cinema-shade"></div></div>
+        <div class="cinema-heading"><p>让瞬间，流动起来。</p><h2 id="cinema-title">一颦一笑。<br>都很有戏。</h2></div>
+        <div class="cinema-word one"><span>自然。</span></div><div class="cinema-word two"><span>生动。</span></div><div class="cinema-word three"><span>就是她。</span></div>
+        <span class="cinema-note">轻轻滚动，慢慢发现。</span>
+        <button class="cinema-play round" data-film aria-label="播放完整原片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 10 6-10 6Z"/></svg></button>
+      </div>
+    </section>
+
+    <section class="portraits" id="portraits" aria-labelledby="portraits-title">
+      <div class="section-wrap portrait-intro"><p class="section-kicker">她的不同光景。</p><h2 id="portraits-title">换一种光。<br>依然，是她。</h2><p>从生活里的随性，到光影里的安静。<br>熟悉的她，也有新的打开方式。</p></div>
+      <div class="portrait-stage"><img id="portrait-image" src="assets/editorial.webp" alt="她的创意棚拍人像" loading="lazy" width="1536" height="1024"><div class="portrait-label"><span id="portrait-style">光影人像</span><span class="creative-badge" id="creative-badge">创意影像</span></div></div>
+      <div class="portrait-switcher" role="group" aria-label="选择影像风格"><button data-portrait="0" class="active" aria-pressed="true"><span class="swatch studio"></span>光影人像</button><button data-portrait="1" aria-pressed="false"><span class="swatch daily"></span>日常原片</button><button data-portrait="2" aria-pressed="false"><span class="swatch mono"></span>黑白时刻</button></div>
+      <p class="portrait-description" id="portrait-description" aria-live="polite">以原视频形象为参考，探索柔光中的另一面。</p>
+    </section>
+
+    <section class="moments section-wrap" id="moments" aria-labelledby="moments-title"><div class="section-head"><h2 id="moments-title">值得收藏的，<br>不止这一刻。</h2><p>来自原视频的真实片刻。<br>点开，慢慢看。</p></div><div class="moment-grid"><button class="moment-tile tall" data-gallery="3"><img src="assets/moment-portrait.jpg" alt="点击查看她望向镜头的人像" loading="lazy" width="720" height="1280"><span>目光所及 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button><button class="moment-tile" data-gallery="0"><img src="assets/moment-playful.jpg" alt="点击查看她俏皮的表情" loading="lazy" width="720" height="1280"><span>小小惊喜 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button><button class="moment-tile" data-gallery="1"><img src="assets/moment-candid.jpg" alt="点击查看她自然的生活瞬间" loading="lazy" width="720" height="1280"><span>日常切片 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button></div></section>
+
+    <section class="closing section-wrap"><div class="closing-halo" aria-hidden="true"></div><p>她。</p><h2>无须定义。<br>自有光芒。</h2><button class="pill" data-film>再看一遍 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 10 6-10 6Z"/></svg></button><a href="#top" class="back-top">回到最初 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></a></section>
+  </main>
+  <footer class="footer"><div class="section-wrap"><div class="footer-top"><a href="#top" class="wordmark">Her.</a><span>每一面，都动人。</span></div><p>本页为个人影像创意展示。动态影片与日常照片来自所提供的视频；光影人像为参考视频形象生成的创意画面。</p><div class="footer-bottom"><span>为她而作 · 2026</span><a href="#moments">探索影像集</a></div></div></footer>
+
+  <dialog class="film-dialog" aria-label="她的影片"><div class="dialog-toolbar"><span>她的日常 · 原片</span><button class="round close-dialog" data-close-film aria-label="关闭影片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><video id="full-film" controls playsinline preload="none" poster="assets/moment-portrait.jpg"><source src="assets/film.mp4" type="video/mp4"></video></dialog>
+  <dialog class="lightbox" aria-label="照片放大查看"><div class="dialog-toolbar"><span id="lightbox-caption">镜头里的她</span><button class="round" data-close-gallery aria-label="关闭照片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="lightbox-body"><button class="round lightbox-prev" aria-label="上一张照片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><img id="lightbox-image" src="assets/moment-portrait.jpg" alt="她的原片人像"><button class="round lightbox-next" aria-label="下一张照片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div><p class="lightbox-count" aria-live="polite">1 / 4</p></dialog>
+</body>
+</html>
