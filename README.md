@@ -4,9 +4,9 @@
 
 ## 查看
 
-[打开在线预览](https://her-in-motion-nov10.wangqianruniubi.chatgpt.site)
+[打开 GitHub Pages 网站](https://wqrnb.github.io/her-in-motion/)
 
-预览站点和 GitHub 仓库均设为私有；预览使用创建者的 ChatGPT 账号访问，仓库使用 wqrnb 的 GitHub 账号访问。
+网站与源码仓库均为公开，无需登录即可浏览。网站由 GitHub Pages 从 `main` 分支根目录发布，更新网站文件并推送后会自动重新发布。
 
 ## 页面体验
 
